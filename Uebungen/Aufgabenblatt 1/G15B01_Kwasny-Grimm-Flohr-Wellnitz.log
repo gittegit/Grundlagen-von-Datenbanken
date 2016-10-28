@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.31)  28 OCT 2016 15:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.31)  28 OCT 2016 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**G01B01_Mueller-Meyer-Schulze.tex
-(./G01B01_Mueller-Meyer-Schulze.tex
+**G15B01_Kwasny-Grimm-Flohr-Wellnitz.tex
+(./G15B01_Kwasny-Grimm-Flohr-Wellnitz.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (./gdb-aufgabenblatt.cls
@@ -721,8 +721,9 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 \pgfnodepartsevenbox=\box60
 \pgfnodepartsixbox=\box61
 \pgfnodepartfivebox=\box62
-)))))) (./G01B01_Mueller-Meyer-Schulze.aux)
-\openout1 = `G01B01_Mueller-Meyer-Schulze.aux'.
+))))))
+No file G15B01_Kwasny-Grimm-Flohr-Wellnitz.aux.
+\openout1 = `G15B01_Kwasny-Grimm-Flohr-Wellnitz.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -737,7 +738,6 @@ LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 11.
-
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -850,7 +850,7 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 File: vsis.pdf Graphic file (type pdf)
 
 <use vsis.pdf>
-Package pdftex.def Info: vsis.pdf used on input line 82.
+Package pdftex.def Info: vsis.pdf used on input line 87.
 (pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
 
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
@@ -859,19 +859,38 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 Overfull \vbox (77.26578pt too high) has occurred while \output is active []
 
 
-[3] (./G01B01_Mueller-Meyer-Schulze.aux)
+[3] <use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+<use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+File: vsis.pdf Graphic file (type pdf)
+
+<use vsis.pdf>
+Package pdftex.def Info: vsis.pdf used on input line 92.
+(pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
+
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (77.26578pt too high) has occurred while \output is active []
+
+
+[4] (./G15B01_Kwasny-Grimm-Flohr-Wellnitz.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17618 strings out of 493029
- 360923 string characters out of 6136234
+ 17616 strings out of 493029
+ 360899 string characters out of 6136234
  502904 words of memory out of 5000000
  20786 multiletter control sequences out of 15000+600000
  13245 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,23n,81p,846b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,23n,81p,852b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-supe
@@ -879,10 +898,11 @@ r/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr
 /share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/t
 ype1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on G01B01_Mueller-Meyer-Schulze.pdf (3 pages, 259354 bytes).
+Output written on G15B01_Kwasny-Grimm-Flohr-Wellnitz.pdf (4 pages, 261325 bytes
+).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

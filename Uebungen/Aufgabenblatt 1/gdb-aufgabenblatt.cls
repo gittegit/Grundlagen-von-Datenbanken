@@ -10,7 +10,7 @@
 \LoadClass{vsis-aufgabenblatt}
 
 
-\newcommand{\Gruppe}{Kwasny, Annika, Flohr, Wellnitz}
+\newcommand{\Gruppe}{Kwasny, Grimm, Flohr, Wellnitz}
 \newcommand{\STiNEGruppeTitel}{STiNE-Gruppe}
 \newcommand{\STiNEGruppe}{15}
 
