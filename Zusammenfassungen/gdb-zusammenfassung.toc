@@ -1,0 +1,45 @@
+\select@language {ngerman}
+\contentsline {part}{I\hspace {1em}Organisatorisches}{2}
+\contentsline {section}{\numberline {1}Ziele der Vorlesung}{2}
+\contentsline {section}{\numberline {2}Klausur}{2}
+\contentsline {part}{II\hspace {1em}Vorlesung 1}{3}
+\contentsline {section}{\numberline {3}Motivation, Einfuehrung und Grundbegriffe}{3}
+\contentsline {subsection}{\numberline {3.1}Motivation}{3}
+\contentsline {subsubsection}{\numberline {3.1.1}Motivation (1)}{3}
+\contentsline {subsubsection}{\numberline {3.1.2}Motivation (2)}{3}
+\contentsline {subsubsection}{\numberline {3.1.3}Motivation (3)}{3}
+\contentsline {subsubsection}{\numberline {3.1.4}Motivation (4)}{3}
+\contentsline {subsection}{\numberline {3.2}Miniwelt}{4}
+\contentsline {subsection}{\numberline {3.3}Informationssystem}{4}
+\contentsline {subsection}{\numberline {3.4}Zusammenfassung}{4}
+\contentsline {section}{\numberline {4}Anforderungen und (Schichten-)Modelle}{5}
+\contentsline {subsection}{\numberline {4.1}Nutzung von Dateisystemen}{5}
+\contentsline {subsection}{\numberline {4.2}Datenabstraktion / Schema-Architektur (Folie)}{6}
+\contentsline {subsection}{\numberline {4.3}Datenunabhaengigkeit}{6}
+\contentsline {subsection}{\numberline {4.4}Grundbegriffe}{7}
+\contentsline {subsection}{\numberline {4.5}Datenbankschema und Auspraegung}{8}
+\contentsline {subsection}{\numberline {4.6}Einordnung der Datenmodelle}{8}
+\contentsline {subsection}{\numberline {4.7}Anforderungen an ein DBS}{8}
+\contentsline {subsection}{\numberline {4.8}Schichtenmodell fuer DBS}{9}
+\contentsline {subsection}{\numberline {4.9}Dynamischer Ablauf einer DB-Operation}{9}
+\contentsline {subsection}{\numberline {4.10}Zusammenfassung}{9}
+\contentsline {section}{\numberline {5}Zusammenfassung: Vorlesung 1}{9}
+\contentsline {section}{\numberline {6}Informationsmodellierung}{10}
+\contentsline {subsection}{\numberline {6.1}DB-Entwurf und Modellierung}{10}
+\contentsline {subsection}{\numberline {6.2}Entity-Relationship-Modell}{10}
+\contentsline {subsubsection}{\numberline {6.2.1}Entity}{10}
+\contentsline {subsubsection}{\numberline {6.2.2}Beispiel: ''Buch'' (Entity-Typ)}{11}
+\contentsline {subsubsection}{\numberline {6.2.3}Wie wird ein Entity identifiziert?}{11}
+\contentsline {subsubsection}{\numberline {6.2.4}Definition: Entity-Typ}{11}
+\contentsline {subsubsection}{\numberline {6.2.5}Definition: Wertebereich / Domain}{11}
+\contentsline {subsubsection}{\numberline {6.2.6}Definition: Entity und Entity-Menge}{11}
+\contentsline {subsubsection}{\numberline {6.2.7}Definition Relationship, Relationship-Typ und Relationship-Menge}{12}
+\contentsline {subsubsection}{\numberline {6.2.8}Beispiele}{12}
+\contentsline {subsection}{\numberline {6.3}Erweiterungen des ERM}{12}
+\contentsline {subsection}{\numberline {6.4}Zusammenfassung}{12}
+\contentsline {section}{\numberline {7}Grundlagen des Relationenmodells}{13}
+\contentsline {section}{\numberline {8}Die Standardsprache SQL}{13}
+\contentsline {section}{\numberline {9}Logischer DB-Entwurf}{13}
+\contentsline {section}{\numberline {10}Transaktionsverwaltung, Integritaetssicherung und Zugriffskontrolle}{13}
+\contentsline {section}{\numberline {11}DB-Zugriffsverfahren}{13}
+\contentsline {section}{\numberline {12}Semistrukturierte Daten und XML}{13}

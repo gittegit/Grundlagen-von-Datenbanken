@@ -1,0 +1,82 @@
+\documentclass[ngerman]{gdb-aufgabenblatt}
+
+
+\renewcommand{\Aufgabenblatt}{1}
+\renewcommand{\Ausgabedatum}{Mi. 19.10.2016}
+\renewcommand{\Abgabedatum}{Fr. 04.11.2016}
+\renewcommand{\Gruppe}{Kwasny, Annika, Flohr, Wellnitz}
+\renewcommand{\STiNEGruppe}{15}
+
+
+\begin{document}
+
+\section{Informationssysteme}
+\begin{enumerate}
+\item \textbf{Charakterisierung:}\\
+Erläutern Sie den Begriff Informationssystem und nennen Sie in diesem Zusammenhang drei relevante Aufgaben eines rechnergestützten Informationssystems. (2 Punkte)
+\item \textbf{Datenunabhängigkeit:}\\
+Definieren Sie kurz den Begriff Datenunabhängigkeit und unterscheiden Sie dabei die logische von der physischen Datenunabhängigkeit. (2 Punkte)
+\item \textbf{Beispiele:}\\
+Nennen Sie drei Anwendungsbeispiele für Informationssysteme und beschreiben Sie die jeweils charakteristischen Vorgänge. Vermeiden Sie die Wiederholung von Beispielen aus der Vorlesung. (6 Punkte)
+\end{enumerate}
+
+\section*{Loesung fuer a)}
+Diese Loesung ist aus dem Skript und gibt die Definitionen nach Hansen wider:
+\begin{itemize}
+\item Ein \textbf{Informationssystem} (IS) besteht aus Menschen und Maschinen, die Informationen erzeugen und/oder benutzen und die durch Kommunikationsbeziehungen miteinander verbunden sind
+\item Ein \textbf{betriebliches IS} dient zur Abbildung der Leistungsprozesse und Austauschbeziehungen im
+Betrieb und zwischen dem Betrieb und seiner Umwelt
+\item Ein \textbf{rechnergestuetztes IS} ist ein System, bei dem die \textbf{Erfassung, Speicherung und/oder Trans-
+formation von Informationen} (Aufgaben) durch den Einsatz von EDV teilweise automatisiert ist => KIS \emph{(kooperatives Informationssystem)} besteht aus einer Menge unabhaengiger Systeme, die zusammen die angestrebte Leistung erbringen
+\end{itemize}
+
+\section*{Loesung fuer b)}
+Man unterscheidet drei Abstraktionsebenen \emph{(ANSI-SPARC-Architektur oder auch Drei-Schema-Architektur)} im Datenbanksystem. Diese drei Ebenen \emph{(intern / konzeptionell / extern)} gewaehrleisten einen bestimmten Grad der \textbf{Datenunabhängigkeit}:
+\begin{itemize}
+\item \textbf{Physische Datenunabhängigkeit:}\\
+Die Modifikation der physischen Speicherstruktur belässt die logische Ebene (also die Datenbankschema) invariant - d.h. dass die physische Datenunabhängigkeit die logische Darstellung der Daten \emph{(durch das Datenbankschema)} von der physikalischen Speicherung der Daten \emph{(auf der Festplatte)}. Z.B. erlauben fast alle Datenbanksysteme das nachträgliche Anlegen eines Indexes, um die Datenobjekte schneller finden zu koennen.\\
+Die physische Speicherung ist nach aussen transparent und bleibt dem Nutzer somit verborgen
+\item \textbf{Logische Datenunabhängigkeit:}\\
+Die logische Datenunabhängigkeit ist die Stabilität des Datenbankschemas gegen Aenderungen der Anwendung und umgekehrt. Bei Aenderungen der logischen Ebene (also des Datenbankschemas) koennte z.B. eine Eigenschaft umbenannt werden in z.B. \emph{Gehaltsstufe}. In einer Sichtendefinition kann man solche kleineren Aenderungen vor den Anwendern verbergen. Demnach muessen Anwendungen nicht umfassend geändert werden, wenn das Datenbankschema geändert wird.
+\end{itemize}
+
+\section*{Loesung fuer c)}
+\subsection{Beispiel \#1 - Kino:}
+Fuer die Organisation eines Kinos benoetigt man ein Informationssystem, welches aktuelle Kinotitel mit Namen, Dauer und kurzer Beschreibung enthaelt. Ausserdem muss zusaetzlich verwaltet werden, welche Werbungen in welchen Kinosaelen ausgetrahlt werden sollen, da je nach FSK unterschiedliche Werbetrailer ausgestrahlt werden. Die Verwaltung der Mitarbeiter inkl. ihrer persoenlichen Daten, ihrer Taetigkeitsbezeichnung und Gehalt werden auch in dem Informationssystem verwaltet.\\
+\textbf{Typische Vorgänge:}
+\begin{itemize}
+\item Film mit entsprechenden Attributen (Sprache, FSK, Laenge, Regisseur) hinzufuegen
+\item Verwaltung von verschiedenen Kinosaelen mit unterschiedlicher Platzzahl
+\item Neue Vorstellungen anlegen mit entsprechenden Attributen (Kinosaal, Film, Startzeit, Endzeit)
+\item Zuordnen von Vorstellungen zu Filmen und von Vorstellungen zu Uhrzeiten
+\item Moeglichkeit der Verschiebung von Vorstellungen
+\item Verwaltung des Programmplans
+\begin{itemize}
+\item Saalverwaltung
+\item Reservierung
+\item Film-Anmietung
+\end{itemize}
+\item Verkauf von Karten fuer explizite Vorstellungen
+\item Werbung verwalten
+\item Verwaltung / Management von Personal
+\end{itemize}
+
+\subsection{Beispiel \#2 - Krankenhaus:}
+Im Krankenhaus werden ärztliche und pflegerische Hilfeleistungen bei Krankheiten, Leiden oder koerperlichen Schaeden vollbracht. Die Patienten sollten im Idealfall soweit wie moeglich geheilt werden. Die persoenlichen Daten der Patienten, die Krankheitsgeschichte, Untersuchungsergebnisse und Diagnosen sowie Gestalt und Verlauf ihrer Behandlung werden durch das \textbf{betriebliche Informationssystem} gespeichert und koennen von vorher definierten Benutzergruppen innerhalb des Personals erstellt, angezeigt und veraendert werden.\\
+Das Personal untergliedert sich in verschiedene Fachbereiche \emph{(Chirurgie, HNO, Radiologie etc.)} und Berufsgruppen, die mit bestimmten Rechten verknuepft sind. Zum Beispiel kann der Arzt Untersuchungsergebnisse vom Patienten aufrufen, weitere Untersuchungen anfordern oder eine Behandlung fuer den Patienten festlegen. Die Pflegekraefte und Therapeuten haben eine exekutive Funktion, diese fuehren die angeordneten Behandlungen des Arztes durch. Sie koennen z.B. einen Terminplan erstellen oder geben Untersuchungsergebnisse ein, koennen jedoch nicht die Behandlungsanweisung an sich veraendern oder eine andere Behandlung fuer den Patienten anordnen. Die Kosten der Behandlung werden ueber festgelegte Tarife mit den jeweils zuständigen Krankenkassen \emph{(oder privat)} abgerechnet.\\
+\textbf{Typische Vorgänge:}
+\begin{itemize}
+\item Aufnahme / Verlegung / Entlassung eines Patienten
+\item Bearbeitung allgemeiner Daten des Patienten
+\item Eingabe der Gesundheitsdaten einer Untersuchung / Therapie
+\item Zuordnung eines behandelnden Arztes
+\item Abrechnung der Behandlung vom Patienten
+\item Erstellen einer Krankheitskarte mit der Krankheitsgeschichte
+\item Verwaltung von Labordaten
+\item Bestellung von Material
+\item Verwaltung / Management von Personal
+\end{itemize}
+
+\subsection{Beispiel \#3 - Universität:}
+
+\end{document}
