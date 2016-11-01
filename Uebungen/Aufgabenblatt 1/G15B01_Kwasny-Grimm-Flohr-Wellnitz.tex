@@ -20,7 +20,7 @@ Definieren Sie kurz den Begriff Datenunabhängigkeit und unterscheiden Sie dabei 
 Nennen Sie drei Anwendungsbeispiele für Informationssysteme und beschreiben Sie die jeweils charakteristischen Vorgänge. Vermeiden Sie die Wiederholung von Beispielen aus der Vorlesung. (6 Punkte)
 \end{enumerate}
 
-\section*{Loesung fuer a)}
+\subsection{Loesung fuer a)}
 Diese Loesung ist aus dem Skript und gibt die Definitionen nach Hansen wider:
 \begin{itemize}
 \item Ein \textbf{Informationssystem} (IS) besteht aus Menschen und Maschinen, die Informationen erzeugen und/oder benutzen und die durch Kommunikationsbeziehungen miteinander verbunden sind
@@ -30,7 +30,7 @@ Betrieb und zwischen dem Betrieb und seiner Umwelt
 formation von Informationen} (Aufgaben) durch den Einsatz von EDV teilweise automatisiert ist => KIS \emph{(kooperatives Informationssystem)} besteht aus einer Menge unabhaengiger Systeme, die zusammen die angestrebte Leistung erbringen
 \end{itemize}
 
-\section*{Loesung fuer b)}
+\subsection{Loesung fuer b)}
 Man unterscheidet drei Abstraktionsebenen \emph{(ANSI-SPARC-Architektur oder auch Drei-Schema-Architektur)} im Datenbanksystem. Diese drei Ebenen \emph{(intern / konzeptionell / extern)} gewaehrleisten einen bestimmten Grad der \textbf{Datenunabhängigkeit}:
 \begin{itemize}
 \item \textbf{Physische Datenunabhängigkeit:}\\
@@ -40,8 +40,8 @@ Die physische Speicherung ist nach aussen transparent und bleibt dem Nutzer somi
 Die logische Datenunabhängigkeit ist die Stabilität des Datenbankschemas gegen Aenderungen der Anwendung und umgekehrt. Bei Aenderungen der logischen Ebene (also des Datenbankschemas) koennte z.B. eine Eigenschaft umbenannt werden in z.B. \emph{Gehaltsstufe}. In einer Sichtendefinition kann man solche kleineren Aenderungen vor den Anwendern verbergen. Demnach muessen Anwendungen nicht umfassend geändert werden, wenn das Datenbankschema geändert wird.
 \end{itemize}
 
-\section*{Loesung fuer c)}
-\subsection{Beispiel \#1 - Kino:}
+\subsection{Loesung fuer c)}
+\subsubsection{Beispiel \#1 - Kino:}
 Fuer die Organisation eines Kinos benoetigt man ein Informationssystem, welches aktuelle Kinotitel mit Namen, Dauer und kurzer Beschreibung enthaelt. Ausserdem muss zusaetzlich verwaltet werden, welche Werbungen in welchen Kinosaelen ausgetrahlt werden sollen, da je nach FSK unterschiedliche Werbetrailer ausgestrahlt werden. Die Verwaltung der Mitarbeiter inkl. ihrer persoenlichen Daten, ihrer Taetigkeitsbezeichnung und Gehalt werden auch in dem Informationssystem verwaltet.\\
 \textbf{Typische Vorgänge:}
 \begin{itemize}
@@ -61,7 +61,7 @@ Fuer die Organisation eines Kinos benoetigt man ein Informationssystem, welches 
 \item Verwaltung / Management von Personal
 \end{itemize}
 
-\subsection{Beispiel \#2 - Krankenhaus:}
+\subsubsection{Beispiel \#2 - Krankenhaus:}
 Im Krankenhaus werden ärztliche und pflegerische Hilfeleistungen bei Krankheiten, Leiden oder koerperlichen Schaeden vollbracht. Die Patienten sollten im Idealfall soweit wie moeglich geheilt werden. Die persoenlichen Daten der Patienten, die Krankheitsgeschichte, Untersuchungsergebnisse und Diagnosen sowie Gestalt und Verlauf ihrer Behandlung werden durch das \textbf{betriebliche Informationssystem} gespeichert und koennen von vorher definierten Benutzergruppen innerhalb des Personals erstellt, angezeigt und veraendert werden.\\
 Das Personal untergliedert sich in verschiedene Fachbereiche \emph{(Chirurgie, HNO, Radiologie etc.)} und Berufsgruppen, die mit bestimmten Rechten verknuepft sind. Zum Beispiel kann der Arzt Untersuchungsergebnisse vom Patienten aufrufen, weitere Untersuchungen anfordern oder eine Behandlung fuer den Patienten festlegen. Die Pflegekraefte und Therapeuten haben eine exekutive Funktion, diese fuehren die angeordneten Behandlungen des Arztes durch. Sie koennen z.B. einen Terminplan erstellen oder geben Untersuchungsergebnisse ein, koennen jedoch nicht die Behandlungsanweisung an sich veraendern oder eine andere Behandlung fuer den Patienten anordnen. Die Kosten der Behandlung werden ueber festgelegte Tarife mit den jeweils zuständigen Krankenkassen \emph{(oder privat)} abgerechnet.\\
 \textbf{Typische Vorgänge:}
@@ -77,7 +77,7 @@ Das Personal untergliedert sich in verschiedene Fachbereiche \emph{(Chirurgie, H
 \item Verwaltung / Management von Personal
 \end{itemize}
 
-\subsection{Beispiel \#3 - Universität:}
+\subsubsection{Beispiel \#3 - Universität:}
 Im Rahmen einer Universitätsverwaltung muessen Universitätsangehoerige verwaltet werden. Zu den Universitätsangehoerigen gehoeren beispielsweise Studierende, die ihre persoenlichen Daten verwalten koennen, sich fuer Module und Vorlesungen oder Seminare anmelden koennen und sich fuer Pruefungen an- oder abmelden koennen. Die Verwaltung der Universiät erstellt Zeugnisse und verwaltet die Pruefungsergebnisse, bearbeitet aber auch die Zuteilung von Raeumen und die Publikation von Lehrveranstaltungen.\\
 \textbf{Typische Vorgaenge:}
 \begin{itemize}
@@ -89,4 +89,106 @@ Im Rahmen einer Universitätsverwaltung muessen Universitätsangehoerige verwaltet
 \item Personalverwaltung, etwa die Pflege der Personaldaten, Abrechnung von Aufwendungen (z.B. Reisekosten) und Lohnabrechnung
 \item Studentenverwaltung, also unter anderem Eintragen und Pflege personenbezogener Daten
 \end{itemize}
+
+\section{Miniwelt}
+
+\subsection{Loesung zu a)}
+
+Spieler:
+\begin{itemize}
+\item Anmeldung an der Anwendung
+\item Tippspielgemeinschaft erstellen
+\item Wettbewerbe anlegen
+\item Begegnungen zu Wettbewerben hinzufügen
+\item Ergebnisse eintragen
+\item Mitspieler hinzufügen/entfernen zu Tippspielgemeinschaften
+\item Ergebnisse und Punktestand aus einer Begegnung in einer
+\item Tippspielgemeinschaft ansehen
+\end{itemize}
+
+Tippspielgemeinschaft:
+\begin{itemize}
+\item Wird von einem Gründer verwaltet
+\item hat mehrere Wettbewerbe ?hat mehrere Mitspieler
+\item jeder Mitspieler in der Gemeinschaft hat einen Punktestand
+\end{itemize}
+
+Wettbewerb:
+\begin{itemize}
+\item Gehört zu einer Tippspielgemeinschaft
+\item hat mehrere Begegnungen
+\end{itemize}
+
+Begegnung:
+\begin{itemize}
+\item Gehört zu einem Wettbewerb
+\item hat mehrere Tipps
+\item hat ein Endergebnis 
+\end{itemize}
+
+Tipp:
+\begin{itemize}
+\item Mitspieler gibt Tipp zu einer Begegnung ab
+\end{itemize}
+
+\subsection{Loesung fuer b)}
+\begin{itemize}
+\item Kontrolle über die operationalen Daten
+\begin{itemize}
+\item Die Daten aus der Miniwelt müssen für viele Nutzer zugänglich sein
+\item Zwischen den Daten entstehen Zusammenhänge die ausgewertet werden müssen (z.B. Ein Spieler gibt einen Tipp zu einer Begegnung innerhalb einer Tippgemeinschaft ab)
+\item Daten sollten nicht redundant gespeichert werden, um Synchronisierungsprobleme zuvermeiden 
+\end{itemize}
+\item Leichte Handbarkeit der Daten
+\begin{itemize}
+\item Datensätze werden anhand logischer Aspekte beschrieben (z.B. Ein Spieler ist Mitspieler bei beliebig vielen Wettbewerben)
+\item Daten sollten einfach genutzt werden können, auch ohne Bezug auf systematische Realisierung
+\item Anwendung hat eine eigene logische Sicht auf die Datenbank, die auf ihre Bedürfnisse zugeschnitten ist
+\item Die Datenbank sollte geltenden Standards entsprechen, dass die Anwendung in Zukunft portierbar bleibt und ein Datenaustausch erleichtert wird
+\end{itemize}
+\item Kontrolle der Datenintegrität
+\begin{itemize}
+\item Zugriff auf Daten sollte automatisiert kontrolliert werden, dass keine Konflikte beim gleichzeitigen Bearbeiten von gleichen Datensätzen entstehen
+\item Verschiedene Spieler haben in verschiedenen Wettbewerben unterschiedliche Rechte (nur der Gründer kann z.B. neue Spieler einladen)
+\item Daten sollten durch bestimmte Regeln beschrieben werden (z.B. eine Begegnung gehört immer zu einem Wettbewerb)
+\item Daten sollten bei einer Transaktion nicht verloren gehen (wenn z.B. die Internetverbindung abbricht)
+\item Daten sollten regelmäßig durch Kopien gesichert werden 
+\end{itemize}
+\item Leistung und Skalierbarkeit
+\begin{itemize}
+\item Die Anwendung sollte einfach an die Benutzerzahlen angepasst werden können (kurze Antwortzeiten, hoher Durchsatz)
+\end{itemize}
+\item Hoher Grad an Daten-Unabhängigkeit 
+\begin{itemize}
+\item Anwendungsprogramm sollte von den Daten isoliert werden, damit beides unabhängig voneinander gewartet, modifiziert und skaliert werden kann
+\end{itemize}
+\end{itemize}
+
+\section{Transaktionen}
+\subsection{Loesung}
+
+\begin{itemize}
+\item Zeitpunkt A, Daten sofort geschrieben: Transaktion wurde unterbrochen. Das Geld wurde von 
+Konto 5 abgebucht, aber nicht auf Konto 7 verbucht. Damit ist das Geld verloren.
+\item Zeitpunkt A, Daten nicht sofort geschrieben: Transaktion wurde unterbrochen. Es wurden keine Daten verändert, aber die Transaktion ist verloren.
+\item Zeitpunkt B, Daten sofort geschrieben: Transaktion wurde nach dem Buchen abgebrochen. Das Geld ist erfolgreich verbucht, jedoch fehlt die Rückmeldung für den Nutzer.
+\item Zeitpunkt B, Daten nicht sofort geschrieben: Transaktion wurde unterbrochen. Es wurden keine Daten verändert, aber die Transaktion ist verloren.
+\item Ein Datenbankensystem verhindert durch atomare Operationen halbfertige Transaktionen. Wird eineTransaktion unterbrochen, wird der Startzustand wieder hergestellt und die Transaktion kann erneut ausgeführt werden.
+\end{itemize}
+
+\section{Warm-Up MySQL}
+\subsection{Loesung zu c)}
+Die ANSI-SPARC Architektur umfasst drei Ebenen: Die externe, die konzeptionelle und die interne Ebene. Diese Aufteilung hat gewisse Vorteile. Da die Ebenen physisch voneinander getrennt sind, können Änderungen an jeder Ebene vorgenommen werden, ohne, dass eine
+weitere ebenfalls beeinflusst wird. Genauere Erläuterungen hierzu sind in Aufgabe 1 zu finden.
+\\~\\
+Schaut man sich nun den hier dargestellten MySQL Server an, bemerkt man sofort, dass der Server sich an der ANSI-SPARC Architektur orientiert.
+\\~\\
+Die externe Ebene (externes Schema) dient der Repräsentation nach außen von Teilen der konzeptionellen Ebene für gewisse Benutzergruppen. Das SQL-Interface, sowie der Connection Pool, in welchem man Berechtigungen und Autorisierungen festlegen kann, als auch die Management Services \& Utilities umfassen diese Ebene.
+\\~\\
+Auf der konzeptionellen Ebene (konzeptionelles Schema) wird die globale Struktur (Wie werden Daten gespeichert? Welche Daten werden gespeichert und inwiefern stehen sie zueinander in Beziehung?) in der Sprache des spezifischen Datenmodells festgelegt. Wichtig ist hier, dass es eine redundanzfreie (keine Dopplungen und ohne Informationsverlust) Beschreibung ist. Bei den MySQL-Servern ist die enstprechende Sprache MySQL, wobei es hier verschiedene Dialekte gibt, je nachdem natürlich, welche SQL-Datenbank genutzt wird.\\
+Parser, Optimizer, sowie Caches \& Buffers repräsentieren diese Ebene bei den MySQLServern.
+\\~\\
+Die interne Ebene (internes Schema) definiert die physische Struktur eines Datenbanksystems und umfasst somit die systemspezifischen Komponenten. In der Graphik ist zu erkennen, dass diese Ebene in einer MySQL Datenbank u.a. durch die Pluggable Storage Engines, File Systems und Files \& Logs repräsentiert ist.
+
+
 \end{document}
