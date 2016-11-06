@@ -20,50 +20,50 @@ Definieren Sie kurz den Begriff Datenunabhängigkeit und unterscheiden Sie dabei 
 Nennen Sie drei Anwendungsbeispiele für Informationssysteme und beschreiben Sie die jeweils charakteristischen Vorgänge. Vermeiden Sie die Wiederholung von Beispielen aus der Vorlesung. (6 Punkte)
 \end{enumerate}
 
-\subsection{Loesung fuer a)}
-Diese Loesung ist aus dem Skript und gibt die Definitionen nach Hansen wider:
+\subsection{Lösung für a)}
+Diese Lösung ist aus dem Skript und gibt die Definitionen nach Hansen wider:
 \begin{itemize}
 \item Ein \textbf{Informationssystem} (IS) besteht aus Menschen und Maschinen, die Informationen erzeugen und/oder benutzen und die durch Kommunikationsbeziehungen miteinander verbunden sind
 \item Ein \textbf{betriebliches IS} dient zur Abbildung der Leistungsprozesse und Austauschbeziehungen im
 Betrieb und zwischen dem Betrieb und seiner Umwelt
-\item Ein \textbf{rechnergestuetztes IS} ist ein System, bei dem die \textbf{Erfassung, Speicherung und/oder Trans-
-formation von Informationen} (Aufgaben) durch den Einsatz von EDV teilweise automatisiert ist => KIS \emph{(kooperatives Informationssystem)} besteht aus einer Menge unabhaengiger Systeme, die zusammen die angestrebte Leistung erbringen
+\item Ein \textbf{rechnergestütztes IS} ist ein System, bei dem die \textbf{Erfassung, Speicherung und/oder Trans-
+formation von Informationen} (Aufgaben) durch den Einsatz von EDV teilweise automatisiert ist => KIS \emph{(kooperatives Informationssystem)} besteht aus einer Menge unabhängiger Systeme, die zusammen die angestrebte Leistung erbringen
 \end{itemize}
 
-\subsection{Loesung fuer b)}
-Man unterscheidet drei Abstraktionsebenen \emph{(ANSI-SPARC-Architektur oder auch Drei-Schema-Architektur)} im Datenbanksystem. Diese drei Ebenen \emph{(intern / konzeptionell / extern)} gewaehrleisten einen bestimmten Grad der \textbf{Datenunabhängigkeit}:
+\subsection{Lösung für b)}
+Man unterscheidet drei Abstraktionsebenen \emph{(ANSI-SPARC-Architektur oder auch Drei-Schema-Architektur)} im Datenbanksystem. Diese drei Ebenen \emph{(intern / konzeptionell / extern)} gewährleisten einen bestimmten Grad der \textbf{Datenunabhängigkeit}:
 \begin{itemize}
 \item \textbf{Physische Datenunabhängigkeit:}\\
-Die Modifikation der physischen Speicherstruktur belässt die logische Ebene (also die Datenbankschema) invariant - d.h. dass die physische Datenunabhängigkeit die logische Darstellung der Daten \emph{(durch das Datenbankschema)} von der physikalischen Speicherung der Daten \emph{(auf der Festplatte)}. Z.B. erlauben fast alle Datenbanksysteme das nachträgliche Anlegen eines Indexes, um die Datenobjekte schneller finden zu koennen.\\
+Die Modifikation der physischen Speicherstruktur belässt die logische Ebene (also die Datenbankschema) invariant - d.h. dass die physische Datenunabhängigkeit die logische Darstellung der Daten \emph{(durch das Datenbankschema)} von der physikalischen Speicherung der Daten \emph{(auf der Festplatte)}. Z.B. erlauben fast alle Datenbanksysteme das nachträgliche Anlegen eines Indexes, um die Datenobjekte schneller finden zu können.\\
 Die physische Speicherung ist nach aussen transparent und bleibt dem Nutzer somit verborgen
 \item \textbf{Logische Datenunabhängigkeit:}\\
-Die logische Datenunabhängigkeit ist die Stabilität des Datenbankschemas gegen Aenderungen der Anwendung und umgekehrt. Bei Aenderungen der logischen Ebene (also des Datenbankschemas) koennte z.B. eine Eigenschaft umbenannt werden in z.B. \emph{Gehaltsstufe}. In einer Sichtendefinition kann man solche kleineren Aenderungen vor den Anwendern verbergen. Demnach muessen Anwendungen nicht umfassend geändert werden, wenn das Datenbankschema geändert wird.
+Die logische Datenunabhängigkeit ist die Stabilität des Datenbankschemas gegen änderungen der Anwendung und umgekehrt. Bei änderungen der logischen Ebene (also des Datenbankschemas) könnte z.B. eine Eigenschaft umbenannt werden in z.B. \emph{Gehaltsstufe}. In einer Sichtendefinition kann man solche kleineren änderungen vor den Anwendern verbergen. Demnach müssen Anwendungen nicht umfassend geändert werden, wenn das Datenbankschema geändert wird.
 \end{itemize}
 
-\subsection{Loesung fuer c)}
+\subsection{Lösung für c)}
 \subsubsection{Beispiel \#1 - Kino:}
-Fuer die Organisation eines Kinos benoetigt man ein Informationssystem, welches aktuelle Kinotitel mit Namen, Dauer und kurzer Beschreibung enthaelt. Ausserdem muss zusaetzlich verwaltet werden, welche Werbungen in welchen Kinosaelen ausgetrahlt werden sollen, da je nach FSK unterschiedliche Werbetrailer ausgestrahlt werden. Die Verwaltung der Mitarbeiter inkl. ihrer persoenlichen Daten, ihrer Taetigkeitsbezeichnung und Gehalt werden auch in dem Informationssystem verwaltet.\\
+Für die Organisation eines Kinos benötigt man ein Informationssystem, welches aktuelle Kinotitel mit Namen, Dauer und kurzer Beschreibung enthält. Ausserdem muss zusätzlich verwaltet werden, welche Werbungen in welchen Kinosälen ausgetrahlt werden sollen, da je nach FSK unterschiedliche Werbetrailer ausgestrahlt werden. Die Verwaltung der Mitarbeiter inkl. ihrer persönlichen Daten, ihrer Tätigkeitsbezeichnung und Gehalt werden auch in dem Informationssystem verwaltet.\\
 \textbf{Typische Vorgänge:}
 \begin{itemize}
-\item Film mit entsprechenden Attributen (Sprache, FSK, Laenge, Regisseur) hinzufuegen
-\item Verwaltung von verschiedenen Kinosaelen mit unterschiedlicher Platzzahl
+\item Film mit entsprechenden Attributen (Sprache, FSK, Länge, Regisseur) hinzufügen
+\item Verwaltung von verschiedenen Kinosälen mit unterschiedlicher Platzzahl
 \item Neue Vorstellungen anlegen mit entsprechenden Attributen (Kinosaal, Film, Startzeit, Endzeit)
 \item Zuordnen von Vorstellungen zu Filmen und von Vorstellungen zu Uhrzeiten
-\item Moeglichkeit der Verschiebung von Vorstellungen
+\item Möglichkeit der Verschiebung von Vorstellungen
 \item Verwaltung des Programmplans
 \begin{itemize}
 \item Saalverwaltung
 \item Reservierung
 \item Film-Anmietung
 \end{itemize}
-\item Verkauf von Karten fuer explizite Vorstellungen
+\item Verkauf von Karten für explizite Vorstellungen
 \item Werbung verwalten
 \item Verwaltung / Management von Personal
 \end{itemize}
 
 \subsubsection{Beispiel \#2 - Krankenhaus:}
-Im Krankenhaus werden ärztliche und pflegerische Hilfeleistungen bei Krankheiten, Leiden oder koerperlichen Schaeden vollbracht. Die Patienten sollten im Idealfall soweit wie moeglich geheilt werden. Die persoenlichen Daten der Patienten, die Krankheitsgeschichte, Untersuchungsergebnisse und Diagnosen sowie Gestalt und Verlauf ihrer Behandlung werden durch das \textbf{betriebliche Informationssystem} gespeichert und koennen von vorher definierten Benutzergruppen innerhalb des Personals erstellt, angezeigt und veraendert werden.\\
-Das Personal untergliedert sich in verschiedene Fachbereiche \emph{(Chirurgie, HNO, Radiologie etc.)} und Berufsgruppen, die mit bestimmten Rechten verknuepft sind. Zum Beispiel kann der Arzt Untersuchungsergebnisse vom Patienten aufrufen, weitere Untersuchungen anfordern oder eine Behandlung fuer den Patienten festlegen. Die Pflegekraefte und Therapeuten haben eine exekutive Funktion, diese fuehren die angeordneten Behandlungen des Arztes durch. Sie koennen z.B. einen Terminplan erstellen oder geben Untersuchungsergebnisse ein, koennen jedoch nicht die Behandlungsanweisung an sich veraendern oder eine andere Behandlung fuer den Patienten anordnen. Die Kosten der Behandlung werden ueber festgelegte Tarife mit den jeweils zuständigen Krankenkassen \emph{(oder privat)} abgerechnet.\\
+Im Krankenhaus werden ärztliche und pflegerische Hilfeleistungen bei Krankheiten, Leiden oder körperlichen Schäden vollbracht. Die Patienten sollten im Idealfall soweit wie möglich geheilt werden. Die persönlichen Daten der Patienten, die Krankheitsgeschichte, Untersuchungsergebnisse und Diagnosen sowie Gestalt und Verlauf ihrer Behandlung werden durch das \textbf{betriebliche Informationssystem} gespeichert und können von vorher definierten Benutzergruppen innerhalb des Personals erstellt, angezeigt und verändert werden.\\
+Das Personal untergliedert sich in verschiedene Fachbereiche \emph{(Chirurgie, HNO, Radiologie etc.)} und Berufsgruppen, die mit bestimmten Rechten verknüpft sind. Zum Beispiel kann der Arzt Untersuchungsergebnisse vom Patienten aufrufen, weitere Untersuchungen anfordern oder eine Behandlung für den Patienten festlegen. Die Pflegekräfte und Therapeuten haben eine exekutive Funktion, diese führen die angeordneten Behandlungen des Arztes durch. Sie können z.B. einen Terminplan erstellen oder geben Untersuchungsergebnisse ein, können jedoch nicht die Behandlungsanweisung an sich verändern oder eine andere Behandlung für den Patienten anordnen. Die Kosten der Behandlung werden über festgelegte Tarife mit den jeweils zuständigen Krankenkassen \emph{(oder privat)} abgerechnet.\\
 \textbf{Typische Vorgänge:}
 \begin{itemize}
 \item Aufnahme / Verlegung / Entlassung eines Patienten
@@ -78,21 +78,21 @@ Das Personal untergliedert sich in verschiedene Fachbereiche \emph{(Chirurgie, H
 \end{itemize}
 
 \subsubsection{Beispiel \#3 - Universität:}
-Im Rahmen einer Universitätsverwaltung muessen Universitätsangehoerige verwaltet werden. Zu den Universitätsangehoerigen gehoeren beispielsweise Studierende, die ihre persoenlichen Daten verwalten koennen, sich fuer Module und Vorlesungen oder Seminare anmelden koennen und sich fuer Pruefungen an- oder abmelden koennen. Die Verwaltung der Universiät erstellt Zeugnisse und verwaltet die Pruefungsergebnisse, bearbeitet aber auch die Zuteilung von Raeumen und die Publikation von Lehrveranstaltungen.\\
-\textbf{Typische Vorgaenge:}
+Im Rahmen einer Universitätsverwaltung müssen Universitätsangehörige verwaltet werden. Zu den Universitätsangehörigen gehören beispielsweise Studierende, die ihre persönlichen Daten verwalten können, sich für Module und Vorlesungen oder Seminare anmelden können und sich für Prüfungen an- oder abmelden können. Die Verwaltung der Universiät erstellt Zeugnisse und verwaltet die Prüfungsergebnisse, bearbeitet aber auch die Zuteilung von Räumen und die Publikation von Lehrveranstaltungen.\\
+\textbf{Typische Vorgänge:}
 \begin{itemize}
-\item Verwaltung von Daten ueber zentrale Verwaltungseinheiten, Fakultäten und Lehrstuehle
-\item Verwaltung von Gebäudedaten (z.B. Raumgroesse und Zuordnung zu Lehreinrichtungen)
-\item Verwaltung ueber die Informationen ueber Veranstaltungen (Vorlesungen, Praktika oder auch Gastvorträge) wie Titel und Beschreibung der Veranstaltung, Ort, Uhrzeit und Dozent
-\item Verwaltung von Teilnehmerlisten fuer bestimmte Lehrveranstaltungen
-\item Verwaltung von Pruefungsdaten, die sich aus Pruefungstermin, Pruefer, Pruefling, Fach oder Fächerkombination und Pruefungsergebnissen zusammensetzt
+\item Verwaltung von Daten über zentrale Verwaltungseinheiten, Fakultäten und Lehrstühle
+\item Verwaltung von Gebäudedaten (z.B. Raumgrösse und Zuordnung zu Lehreinrichtungen)
+\item Verwaltung über die Informationen über Veranstaltungen (Vorlesungen, Praktika oder auch Gastvorträge) wie Titel und Beschreibung der Veranstaltung, Ort, Uhrzeit und Dozent
+\item Verwaltung von Teilnehmerlisten für bestimmte Lehrveranstaltungen
+\item Verwaltung von Prüfungsdaten, die sich aus Prüfungstermin, Prüfer, Prüfling, Fach oder Fächerkombination und Prüfungsergebnissen zusammensetzt
 \item Personalverwaltung, etwa die Pflege der Personaldaten, Abrechnung von Aufwendungen (z.B. Reisekosten) und Lohnabrechnung
 \item Studentenverwaltung, also unter anderem Eintragen und Pflege personenbezogener Daten
 \end{itemize}
 
 \section{Miniwelt}
 
-\subsection{Loesung zu a)}
+\subsection{Lösung zu a)}
 
 Spieler:
 \begin{itemize}
@@ -131,7 +131,7 @@ Tipp:
 \item Mitspieler gibt Tipp zu einer Begegnung ab
 \end{itemize}
 
-\subsection{Loesung fuer b)}
+\subsection{Lösung für b)}
 \begin{itemize}
 \item Kontrolle über die operationalen Daten
 \begin{itemize}
@@ -165,7 +165,7 @@ Tipp:
 \end{itemize}
 
 \section{Transaktionen}
-\subsection{Loesung}
+\subsection{Lösung}
 
 \begin{itemize}
 \item Zeitpunkt A, Daten sofort geschrieben: Transaktion wurde unterbrochen. Das Geld wurde von 
@@ -177,7 +177,26 @@ Konto 5 abgebucht, aber nicht auf Konto 7 verbucht. Damit ist das Geld verloren.
 \end{itemize}
 
 \section{Warm-Up MySQL}
-\subsection{Loesung zu c)}
+
+\subsection{Lösung zu a)}
+Es	wird eine Tabelle namens 'gdb\_gruppe219.user' mit den Feldern 'id' vom Typ INT (=Integer), 'name' vom Typ VARCHAR(49) und 'passwort' vom Typ VARCHAR(8) erstellt.\\
+Die	Felder 'name' und 'passwort' dürfen nicht leer sein, also nicht den Wert 'null' enthalten.
+\\~\\
+Mit der anschließenden INSERT-Anweisung wird ein neuer Datensatz zur erstellten Tabelle hinzugefügt.
+\\~\\
+Inhalt der Felder für den neuen Datensatz:
+\begin{itemize}
+\item id = 1
+\item name = gdbNutzer
+\item passwort = geheim
+\end{itemize}
+
+\subsection{Lösung zu b)}
+Es wird eine Datenabfrage an die Tabelle 'gdb\_gruppe219.user' gestellt. Dabei sollen \textbf{alle} Felder der Datensätze angezeigt werden, in deren Feld 'name' der Wert gdbUser steht. Das heißt, dass alle User namens gdbUser mit allen vorhandenen Informationen angezeigt werden sollen.
+\\~\\
+Anschließend wird die ganze Tabelle inklusive aller Daten gelöscht.
+
+\subsection{Lösung zu c)}
 Die ANSI-SPARC Architektur umfasst drei Ebenen: Die externe, die konzeptionelle und die interne Ebene. Diese Aufteilung hat gewisse Vorteile. Da die Ebenen physisch voneinander getrennt sind, können Änderungen an jeder Ebene vorgenommen werden, ohne, dass eine
 weitere ebenfalls beeinflusst wird. Genauere Erläuterungen hierzu sind in Aufgabe 1 zu finden.
 \\~\\
@@ -189,6 +208,8 @@ Auf der konzeptionellen Ebene (konzeptionelles Schema) wird die globale Struktur
 Parser, Optimizer, sowie Caches \& Buffers repräsentieren diese Ebene bei den MySQLServern.
 \\~\\
 Die interne Ebene (internes Schema) definiert die physische Struktur eines Datenbanksystems und umfasst somit die systemspezifischen Komponenten. In der Graphik ist zu erkennen, dass diese Ebene in einer MySQL Datenbank u.a. durch die Pluggable Storage Engines, File Systems und Files \& Logs repräsentiert ist.
+
+
 
 
 \end{document}
